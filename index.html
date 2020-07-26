@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="srtle.css">
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+<title>JavaScript Calculator</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row text-center mainrow d-flex justify-content-center">
+
+            <div>
+
+                <form name="calculator">
+                    <table>
+                       <tr>
+                          <td colspan="4">
+                             <input  id="input" type="text" name="display" id="display" placeholder="Start Calculating>>>" disabled>
+                          </td>
+                       </tr>
+                       <tr>
+                          <td><input class="buttondesign" type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
+                          <td><input class="buttondesign" type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
+                          <td><input class="buttondesign" type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
+                          <td><input class="operators" type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
+                       </tr>
+                       <tr>
+                          <td><input class="buttondesign" type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
+                          <td><input class="buttondesign" type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
+                          <td><input class="buttondesign" type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
+                          <td><input class="operators"  type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
+                       </tr>
+                       <tr>
+                          <td><input class="buttondesign" type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
+                          <td><input class="buttondesign" type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
+                          <td><input class="buttondesign" type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
+                          <td><input class="operators" type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td>
+                       </tr>
+                       <tr>
+                          <td><input class="vanish-equal" type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''"></td>
+                          <td><input class="buttondesign" type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
+                          <td><input class="vanish-equal" type="button" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+                          <td><input class="operators" type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'"></td>
+                       </tr>
+                    </table>
+                 </form>
+              
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+      <!-- Footer -->
+
+      <div class="container">
+        <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+        
+            
+          
+            <!-- Copyright -->
+            <br>
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+              <a href="https://www.facebook.com/Parijat.Datta642"> Parijat Datta</a>
+            </div>
+            <!-- Copyright -->
+          
+          </footer>
+          <!-- Footer -->
+
+       
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
